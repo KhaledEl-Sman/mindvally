@@ -14,6 +14,7 @@ html {
 b {
     font-family: 'Hanken Grotesk', sans-serif;
     font-weight: inherit;
+    color: inherit;
 }
 
 /************************************** Nav ******************************************/
@@ -27,8 +28,15 @@ nav {
     overflow: hidden;
 }
 
+nav .container-fluid {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
 .navbar-brand img {
-    width: 150px;
+    width: 200px;
+    position: relative;
+    top: -5px;
 }
 
 .navbar-toggler {
@@ -60,11 +68,11 @@ nav .nav-item .nav-link {
 }
 
 nav .nav-item .nav-link:hover {
-    color: #7a12d4;
+    color: #1acaae;
 }
 
 nav .active .nav-link {
-    color: #7a12d4;
+    color: #1acaae;
 }
 
 nav .btn {
@@ -80,13 +88,17 @@ nav .btn {
 }
 
 nav .btn:hover {
-    background-color: #7a12d4;
+    background-color: #1acaae;
     color: #fff !important;
 }
 
 nav .btn:focus {
-    background-color: #7a12d4;
+    background-color: #1acaae !important;
     color: #fff !important;
+}
+
+.btn:focus {
+    box-shadow: none !important;
 }
 
 .animated-icon1 {
@@ -117,7 +129,7 @@ nav .btn:focus {
 }
 
 .navbar-toggler:hover .animated-icon1 span {
-    background: #7a12d4;
+    background: #1acaae;
 }
 
 .animated-icon1 span:nth-child(1) {
@@ -147,12 +159,24 @@ nav .btn:focus {
     transform: rotate(-135deg);
 }
 
+@media (max-width: 450px) {
+    .navbar-brand img {
+        width: 170px;
+    }
+}
+
+@media (max-width: 350px) {
+    .navbar-brand img {
+        width: 150px;
+    }
+}
+
 /************************************** Top-header ******************************************/
 
 .top-header {
     display: flex;
     align-items: center;
-    margin-top: 55px;
+    margin-top: 83px;
     padding: 1rem 1rem 0 1rem;
 }
 
@@ -181,7 +205,7 @@ nav .btn:focus {
 }
 
 .top-header .right .btn {
-    color: #7a12d4;
+    color: #1acaae;
     background-color: white;
     border-radius: 25px;
     width: 250px;
@@ -190,7 +214,7 @@ nav .btn:focus {
 
 .top-header .right .btn:hover {
     color: white;
-    background-color: #7a12d4;
+    background-color: #1acaae;
 }
 
 .top-header .left {
@@ -207,8 +231,8 @@ nav .btn:focus {
 }
 
 .top-header .left video:hover {
-    border-bottom: 3px solid #7a12d4;
-    border-left: 3px solid #7a12d4;
+    border-bottom: 3px solid #1acaae;
+    border-left: 3px solid #1acaae;
 }
 
 @media (max-width: 1000px) {
@@ -263,7 +287,7 @@ nav .btn:focus {
 /************************************** Brands ******************************************/
 
 .brands {
-    background-color: #7a12d4;
+    background-color: #1acaae;
     padding: .5rem;
     display: flex;
     justify-content: center;
@@ -295,7 +319,7 @@ nav .btn:focus {
 
 .bottom-header {
     padding: 2rem 1rem;
-    background-image: linear-gradient(180deg, #fff4e9, #f8efff);
+    background-image: linear-gradient(180deg, #fff4e9, #1acaad1a);
     text-align: center;
 }
 
@@ -345,8 +369,8 @@ nav .btn:focus {
 
 .bottom-header .practitioner .left .btn {
     background-color: transparent;
-    border: 2px solid #7a12d4;
-    color: #7a12d4;
+    border: 2px solid #1acaae;
+    color: #1acaae;
     border-radius: 25px;
     width: 200px;
     font-weight: 600;
@@ -354,7 +378,7 @@ nav .btn:focus {
 }
 
 .bottom-header .practitioner .left .btn:hover {
-    background-color: rgba(122, 18, 212, .1);
+    background-color: #1acaad22;
 }
 
 .bottom-header .practitioner .left p {
@@ -399,6 +423,10 @@ nav .btn:focus {
     width: 100%;
 }
 
+.first-slider .swiper-slide a {
+    width: 100%;
+}
+
 .first-slider .swiper-wrapper .swiper-slide img {
     width: 100%;
     border-radius: 12px;
@@ -417,7 +445,7 @@ nav .btn:focus {
 
 .first-slider .swiper-button-next:after, .first-slider .swiper-button-prev:after {
     font-size: 20px;
-    color: #7a12d4;
+    color: #1acaae;
 }
 
 .first-slider .swiper-button-next, .first-slider .swiper-rtl .swiper-button-prev {
@@ -493,7 +521,7 @@ nav .btn:focus {
 }
 
 .swiper-pagination-bullet-active {
-    background: #7a12d4;
+    background: #1acaae;
 }
 
 .blogs .swiper-slide {
@@ -674,10 +702,8 @@ nav .btn:focus {
 /************************************** Teachers ******************************************/
 
 .teachers {
-    padding: 1rem 1rem 3rem 1rem;
-    max-width: 1200px;
-    margin: auto;
-    width: 90%;
+    padding: 1rem 0 3rem 0;
+    width: 100%;
 }
 
 .teachers h3 {
@@ -687,15 +713,38 @@ nav .btn:focus {
     margin: 0 0 30px 0;
 }
 
+.teachers .swiper-slide {
+    text-align: center;
+}
+
 .teachers .swiper-slide img {
-    width: 100%;
-    border-radius: 5px;
+    width: calc(100% - 10px);
+    border-radius: 10px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
     transition: .3s;
 }
 
 .teachers .swiper-slide img:hover {
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+}
+
+.teachers .more {
+    text-align: center;
+}
+
+.teachers .more .btn {
+    background-color: transparent !important;
+    border: unset !important;
+    color: #1acaae;
+    padding: .5rem 1.5rem;
+    border-radius: 25px !important;
+    font-size: 18px;
+    min-width: 200px;
+    font-weight: 500;
+}
+
+.teachers .more .btn:hover {
+    background-color: #1acaad22 !important;
 }
 
 /************************************** Students ******************************************/
@@ -741,7 +790,7 @@ nav .btn:focus {
 }
 
 .students span b {
-    color: #7a12d4;
+    color: #1acaae;
 }
 
 .students .content h4 {
@@ -756,13 +805,13 @@ nav .btn:focus {
 }
 
 .students .content a {
-    color: #7a12d4;
+    color: #1acaae;
     text-decoration: none;
 }
 
 .students .content .btn {
-    background: linear-gradient(180deg, #9b37f2, #7a12d4);
-    background-image: linear-gradient(rgb(155, 55, 242), rgb(122, 18, 212));
+    background: linear-gradient(180deg, #003b4b, #1acaae);
+    background-image: linear-gradient(#1acaae, #003b4b);
     padding: .75rem 2rem;
     border-radius: 30px;
     color: white;
@@ -771,8 +820,8 @@ nav .btn:focus {
 }
 
 .students .content .btn:hover {
-    background: #7a12d4;
-    background-image: linear-gradient(#7a12d4, #7a12d4);
+    background: #1acaae;
+    background-image: linear-gradient(#1acaae, #1acaae);
 }
 
 @media (max-width: 1000px) {
@@ -852,7 +901,7 @@ nav .btn:focus {
 }
 
 .stories .story .description p a {
-    color: #7a12d4;
+    color: #1acaae;
     line-height: 2rem;
 }
 
@@ -890,6 +939,25 @@ nav .btn:focus {
 
 .stories .swiper {
     padding-bottom: 3rem;
+}
+
+.stories .more {
+    text-align: center;
+}
+
+.stories .more .btn {
+    background-color: transparent !important;
+    border: unset !important;
+    color: #1acaae;
+    padding: .5rem 1.5rem;
+    border-radius: 25px !important;
+    font-size: 18px;
+    min-width: 300px;
+    font-weight: 500;
+}
+
+.stories .more .btn:hover {
+    background-color: #1acaad22 !important;
 }
 
 @media (max-width: 600px) {
@@ -941,7 +1009,7 @@ nav .btn:focus {
     font-size: 28px;
     font-weight: 600;
     text-align: right;
-    color: #7a12d4;
+    color: #1acaae;
 }
 
 .features h3 b {
@@ -963,8 +1031,8 @@ nav .btn:focus {
 }
 
 .features .btn {
-    background: linear-gradient(180deg, #9b37f2, #7a12d4);
-    background-image: linear-gradient(rgb(155, 55, 242), rgb(122, 18, 212));
+    background: linear-gradient(180deg, #003b4b, #1acaae);
+    background-image: linear-gradient(#1acaae, #003b4b);
     padding: .75rem 2rem;
     border-radius: 30px;
     color: white;
@@ -974,8 +1042,8 @@ nav .btn:focus {
 }
 
 .features .btn:hover {
-    background: #7a12d4;
-    background-image: linear-gradient(#7a12d4, #7a12d4);
+    background: #1acaae;
+    background-image: linear-gradient(#1acaae, #1acaae);
 }
 
 @media (max-width: 992px) {
@@ -997,6 +1065,18 @@ nav .btn:focus {
 
     .features .btn {
         width: 100%;
+    }
+
+    .features h2 {
+        margin-bottom: 0;
+    }
+
+    .features h3 {
+        margin-top: 0 !important;
+    }
+
+    .features .container-fluid {
+        padding-top: 0 !important;
     }
 }
 

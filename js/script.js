@@ -131,7 +131,7 @@ $(document).ready(function () {
       delay: 250,
     },
     speed: 5000,
-    spaceBetween: 20,
+    spaceBetween: 5,
     pauseOnMouseEnter: true,
     breakpoints: {
       200: {
