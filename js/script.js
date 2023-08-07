@@ -78,31 +78,7 @@ $(document).ready(function () {
     if (video.muted) video.muted = false;
     else video.muted = true;
   });
-
-  // $(".bottom-header .right video").click(function () {
-  //   const video = document.getElementById("second-video");
-  //   if (video.muted) {
-  //     video.play();
-  //     video.muted = false;
-  //   } else {
-  //     video.pause();
-  //     video.muted = true;
-  //   }
-  // });
-
-  // if (video.requestFullscreen) {
-  //   video.requestFullscreen();
-  // } else if (video.mozRequestFullScreen) {
-  //   /* Firefox */
-  //   video.mozRequestFullScreen();
-  // } else if (video.webkitRequestFullscreen) {
-  //   /* Chrome, Safari and Opera */
-  //   video.webkitRequestFullscreen();
-  // } else if (video.msRequestFullscreen) {
-  //   /* IE/Edge */
-  //   video.msRequestFullscreen();
-  // }
-
+  
   const swiper1 = new Swiper(".first-slider .swiper", {
     slidesPerView: 1,
     loop: true,
