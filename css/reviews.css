@@ -1,0 +1,860 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Convert bootstrap */
+
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+
+[type=reset], [type=submit], button, html [type=button] {
+    -webkit-appearance: button;
+}
+
+.btn-group-lg>.btn, .btn-lg {
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: .3rem;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+button, select {
+    text-transform: none;
+}
+
+button, input {
+    overflow: visible;
+}
+
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.btn-primary.disabled, .btn-primary:disabled {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn.disabled, .btn:disabled {
+    opacity: .65;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.d-none {
+    display: none;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+/* Convert bootstrap */
+
+.shopify-reviews {
+    margin: 0 auto;
+    max-width: 1300px;
+    padding: 10px;
+}
+
+.shopify-reviews .star-class {
+    display: flex;
+    align-items: center;
+}
+
+.shopify-reviews svg {
+    position: relative;
+    top: -1px;
+    margin: 0 3px;
+}
+
+.shopify-reviews .star-class {
+    margin: 7px 0;
+}
+
+.shopify-reviews .progress-bar {
+    width: 300px;
+    height: 10px;
+    margin: 0 15px;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    position: relative;
+}
+
+.shopify-reviews .progress-bar .progress-score {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: #1acaae;
+    border-radius: 5px;
+    transition: 0.3s;
+    display: block;
+}
+
+.shopify-reviews .star-class span {
+    margin: 0 3px;
+}
+
+.reviews-summary {
+    position: relative;
+    border-bottom: 1px solid #dedede;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+#add_review {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    font-size: 16px;
+    transform: translateY(-50%);
+    z-index: 2;
+    width: 175px;
+    background-color: #fff;
+    border: 1px solid #1acaae;
+    color: #1acaae;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding: 0.85rem 1.5rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    margin: 0;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+        border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+#add_review:focus {
+    box-shadow: none;
+    border: none;
+    outline: none;
+}
+
+#add_review:hover {
+    background-color: #1acaae;
+    color: #fff;
+    border-color: #1acaae;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    position: relative;
+}
+
+.user-profile .name-section {
+    padding: .5rem;
+}
+
+.user-profile .verify {
+    display: flex;
+    align-items: center;
+}
+
+.user-profile h3 {
+    font-size: 16px !important;
+    margin: 0 0 0.5rem 0.35rem;
+    text-transform: capitalize;
+    text-align: left !important;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.user-profile span {
+    font-size: 14px;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.user-profile #profile-pic {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    background-color: #1acaae;
+    width: 50px;
+    height: 50px;
+}
+
+.user-profile .rate {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.rate svg {
+    margin: 0;
+}
+
+.review-body h4 {
+    margin: .75rem 0;
+    font-size: 22px;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.review-body p {
+    text-align: justify;
+    margin: .5rem 0;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.give-rate {
+    display: flex;
+    margin: .75rem 0;
+    text-align: justify;
+    padding-right: .5rem;
+}
+
+.give-rate span {
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.vote-actions {
+    display: flex;
+}
+
+.up-vote,
+.down-vote {
+    display: flex;
+    align-items: center;
+    margin: 0 5px;
+}
+
+.down-vote svg {
+    transform: rotate(180deg);
+}
+
+.vote-actions svg {
+    cursor: pointer;
+    fill: #888;
+}
+
+.vote-actions svg.active {
+    fill: #1e1e1e;
+}
+
+.user-review {
+    border-bottom: 1px solid #dedede;
+    padding: 0 0 1rem 0;
+}
+
+.review-body .pic {
+    position: relative;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.review-body .pic img {
+    display: block;
+    border-radius: 5px;
+}
+
+.review-body .pic .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 2;
+    border-radius: 5px;
+}
+
+.review-body .pic .overlay svg {
+    transition: 0.2s;
+    z-index: 1;
+    position: relative;
+}
+
+.review-body .pic .overlay:hover svg {
+    transform: scale(1.15);
+}
+
+.user-review .reply {
+    background-color: #f0f0f0;
+    padding: 0.85rem;
+    border-radius: 5px;
+    border-left: 3px solid #1acaae;
+    margin: 0.5rem 0;
+}
+
+.user-review .reply .reply-body {
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.user-review .reply span {
+    text-transform: capitalize;
+    font-weight: 600px;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.user-review .reply .reply-title {
+    color: #666;
+    font-weight: 500;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.review_popup {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 9998;
+}
+
+.review_popup .content {
+    background-color: #eee;
+    border-radius: 12px;
+    width: 90%;
+    height: 90%;
+    max-height: 584px;
+    max-width: 805px;
+    display: flex;
+    cursor: default;
+    overflow: hidden;
+}
+
+.review_popup .content .pic {
+    height: 100%;
+}
+
+.review_popup .content .pic img {
+    height: 100%;
+    width: auto;
+    border-radius: 12px 0 0 12px;
+}
+
+.review_popup .content video {
+    height: calc(100% + 11px);
+    min-width: 50%;
+    border-radius: 12px 0 0 12px;
+    position: relative;
+    top: -11px;
+}
+
+.review_popup .review-card {
+    padding: 20px 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.review-card .user-title {
+    display: flex;
+    align-items: center;
+}
+
+.review-card .user-title h3 {
+    font-size: 20px;
+    padding-right: 5px;
+    text-transform: capitalize;
+    margin: .75rem 0;
+}
+
+.review-card .rate {
+    margin: 0px 0 15px 0;
+}
+
+.review-card h4 {
+    font-weight: 600;
+    color: #333;
+    margin: 1rem 0;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.review-card p {
+    color: #666;
+    margin: .5rem 0;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.rev-close-modal {
+    right: 0.5rem;
+    top: 0.5rem;
+    position: absolute;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #555;
+}
+
+.rev-close-modal:hover {
+    color: #000;
+}
+
+.rev-close-modal::after {
+    content: "\2715";
+}
+
+.rev-close-modal:focus {
+    border: none;
+    outline: none;
+}
+
+.add_review {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+}
+
+.add_review .review-container {
+    width: 90%;
+    height: 60%;
+    max-width: 700px;
+    max-height: 400px;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 15px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.review-container .review_step {
+    display: none;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+}
+
+.review-container .review_step:first-of-type {
+    display: block;
+}
+
+.review-container .review_step h5 {
+    font-size: 28px;
+    font-weight: 500;
+    color: #333;
+    text-align: center;
+    margin: 1.25rem 0;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.review-container .review_step h6 {
+    color: #939393;
+    font-size: 20px;
+    margin: 15px 0 30px 0;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.review-container .review_step small {
+    color: #939393;
+    font-size: 16px;
+    margin: 20px;
+    display: block;
+    text-align: center;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.review-container .review_step .description {
+    width: 100%;
+    padding: 10px;
+}
+
+.review-container .review_step .description textarea {
+    width: 100%;
+    resize: none;
+    padding: 10px;
+    font-size: 16px;
+    max-height: 170px;
+}
+
+.review-container .review_step .rev-input {
+    padding: 7px 10px;
+    width: 90%;
+    max-width: 450px;
+    border-radius: 3px;
+    border: 1px solid #939393;
+    margin: 10px 0 20px 0;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.review-container .review_step .next-btn {
+    width: 175px;
+    text-align: center;
+    background-color: #fff;
+    border-color: #000;
+    color: #000;
+    font-weight: 600;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.review-container .review_step .next-btn:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.review-container .review_step .next-btn:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.review-container .review_step .next-btn:active {
+    background: #000;
+}
+
+.review-container .review_step .next-btn:disabled {
+    background-color: transparent;
+    border-color: #000;
+    color: #000;
+}
+
+.review_step .user-data {
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    padding: 15px 0 25px 0;
+}
+
+.review_step .user-data input:focus {
+    border-color: #333;
+    box-shadow: none;
+    outline: none;
+}
+
+.review-container .review_step .description textarea::placeholder {
+    color: #939393;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.rev-button {
+    color: #000000;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    cursor: pointer;
+    padding: 7px;
+    max-width: 420px;
+    text-align: center;
+    width: 100%;
+    margin: 20px auto 0;
+    display: block;
+    border-radius: 3px;
+    font-size: 22px;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.img-btn {
+    margin: 20px 0 5px;
+}
+
+.review-container .review_step .all_stars {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
+    max-width: 500px;
+    margin: auto;
+}
+
+.review_step .all_stars .star {
+    text-align: center;
+}
+
+.review_step .all_stars .star svg {
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.review_step .all_stars .star svg:hover {
+    background-color: #1acaae33;
+}
+
+.review_step .all_stars .star span {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+@media (max-width: 920px) {
+    .review_popup .content {
+        display: unset;
+    }
+
+    .review_popup .content .pic {
+        background: #000;
+        width: 100%;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .review_popup .content .pic img {
+        height: 100%;
+        width: auto;
+        border-radius: 12px;
+        padding: 7px;
+    }
+
+    .review_popup .content video {
+        height: 100%;
+        width: auto;
+        border-radius: 12px;
+        padding: 7px;
+        position: unset;
+        top: 0;
+    }
+}
+
+@media (max-width: 750px) {
+    #add_review {
+        left: 50%;
+        top: unset;
+        bottom: 1rem;
+        transform: translateX(-50%);
+        width: 200px;
+        font-size: 18px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+    }
+
+    .reviews-summary {
+        padding-bottom: 5rem;
+    }
+
+    .review-body p {
+        font-size: 14px;
+    }
+
+    .review-body h4 {
+        font-size: 20px;
+    }
+
+    .give-rate span {
+        font-size: 14px;
+    }
+
+    .vote-actions svg {
+        width: 14px;
+        height: 14px;
+    }
+
+    .vote-actions div {
+        font-size: 14px;
+    }
+
+    .review-container .review_step h5 {
+        font-size: 24px;
+        margin: .5rem 0;
+    }
+
+    .review_step .all_stars .star svg {
+        padding: 5px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .review-container .review_step .all_stars {
+        padding: 0;
+    }
+
+    .review_step .all_stars .star span {
+        padding: 0;
+        font-size: 15px;
+    }
+
+    .review-container .review_step h6 {
+        margin: 7px 12px;
+        font-size: 17px;
+    }
+
+    .review-container .review_step small {
+        margin: 10px;
+    }
+
+    .rev-button{
+        font-size: 18px;
+    }
+
+    .img-btn {
+        margin: 10px 0 5px;
+    }
+
+    .review-container .review_step .description textarea{
+        max-height: 140px;
+    }
+}
+
+@media (max-width: 650px) {
+    .review-card .user-title h3 {
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .review-card .user-title svg {
+        width: 14px;
+        height: 14px;
+    }
+
+    .review-card .rate {
+        margin: 5px 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .review-card h4 {
+        margin: 7px 0;
+        font-size: 18px;
+    }
+
+    .review-card p {
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    .rate svg {
+        width: 12px;
+    }
+}
+
+.success-animation {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.checkmark {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    stroke-width: 2;
+    stroke: #4bb71b;
+    stroke-miterlimit: 10;
+    box-shadow: inset 0px 0px 0px #4bb71b;
+    animation: fill 0.4s ease-in-out 0.4s forwards,
+        scale 0.3s ease-in-out 0.9s both;
+    position: relative;
+    top: 5px;
+    right: 5px;
+    margin: 0 auto;
+}
+
+.checkmark__circle {
+    stroke-dasharray: 166;
+    stroke-dashoffset: 166;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+    stroke: #4bb71b;
+    fill: #fff;
+    animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+
+.checkmark__check {
+    transform-origin: 50% 50%;
+    stroke-dasharray: 48;
+    stroke-dashoffset: 48;
+    animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
+
+@keyframes stroke {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes scale {
+
+    0%,
+    100% {
+        transform: none;
+    }
+
+    50% {
+        transform: scale3d(1.1, 1.1, 1);
+    }
+}
+
+@keyframes fill {
+    100% {
+        box-shadow: inset 0px 0px 0px 30px #4bb71b;
+    }
+}
